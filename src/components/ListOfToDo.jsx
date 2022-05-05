@@ -6,7 +6,6 @@ const ListOfToDo = () => {
 
   useEffect(() => {
     let listOfNote = fetchAllNotes().then((notes) => {
-      console.log(notes);
       let action = {
         type: "get-notes",
         payload: notes,
